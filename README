@@ -1,0 +1,36 @@
+This is a repository for a library that allows to perform arithmetic operations for Roman Numerals.
+This version implements a unit testing framework with Check.
+
+Compile all and execute the test using Check:
+$ make -f ope2rn.makefile test
+
+Compile the library and a program (main.c) application:
+$ make -f ope2rn.makefile
+
+Execution:
+- You can execute the test manually using the following command:
+$ ./ope2rn-test
+
+- You can execute the console application using any of the following commands:
+  Note: the debug messages are useful to see the procedure implemented
+$ source ope2rn.sh    (clear the screen and executes printing debug messages) 
+$ ./ope2rn pdm        (execute printing debug messages)            
+$ ./ope2rn            (execute without print debug messages)
+
+Characteristics:
+- The arithmetic operations available are: addition and subtraction.
+- All validations are included.
+- All operations were performed using strings (or chars). Conversions to integer numbers were not performed. 
+- Range of values for operations are: I - MMMCMXCIX, or 1 to 3999 in Arabic notation. 
+- Allowed symbols: i,v,x,l,c,d,m and I,V,X,L,C,D,M  
+- The console application request two input numbers (n1 y n2) and performs the following operations:
+  - The addition n1 + n2.
+  - The subtraction n1 - n2. 
+  - The subtraction n2 - n1.
+  - The console application could print debug messages for demonstratives purposes (if argument “pdm” is included).
+  - If the addition is out of range, the answer is not presented.
+  - In the subtraction, the answer is presented only when the minuend is greater than the subtrahend.  
+
+
+This library was designed for Javier Soto Vargas - javiersotovargas@gmail.com
+
