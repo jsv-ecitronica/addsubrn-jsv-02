@@ -31,6 +31,14 @@ Characteristics:
   - If the addition is out of range, the answer is not presented.
   - In the subtraction, the answer is presented only when the minuend is greater than the subtrahend.  
 
+Description of files:
+addsubrn-test.check (template for the creation of the test in addsubrn-test.c)
+addsubrn.c          (library for arithmetic of roman numerals, addition, subtraction, validation, other operations)
+addsubrn.h          (header for declarations and definitions)
+main.c              (console application for demonstrative purposes)
+ope2rn.makefile     (makefile for compilation of code and test)
+ope2rn.sh           (it is a shell executable file for console application)
+ope2rn-test         (executable for test)
+ope2rn              (executable for console application)
 
 This library was designed for Javier Soto Vargas - javiersotovargas@gmail.com
-
